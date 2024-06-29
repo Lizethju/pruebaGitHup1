@@ -1,0 +1,6 @@
+function sumar(num1, num2){
+    return (num1+num2)
+}
+a = parseInt(prompt("Primer número"));
+b = parseInt(prompt("Segundo número"));
+alert(sumar(a,b));

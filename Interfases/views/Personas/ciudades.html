@@ -8,7 +8,7 @@
 
     <style>
         .ciud { text-align: center;
-            border: solid 5px; color: rgb(50, 214, 179);
+            border: solid 5px; color: rgb(154, 241, 237);
 
         }
         .conta{
@@ -17,10 +17,51 @@
         .cib{
             margin-left: 30px;
             max-height: 60px;
+            border-spacing: 2000px;
+            border-radius: 10px;
+            background: fixed;
+            background-color: rgba(238, 176, 238, 0.411);
+            background-blend-mode: luminosity;
+            padding: 8px;
+            margin-bottom: 30px;
+            margin: 40px;
+            font-weight: 700;
+
+           
+         
         }
         .btn{
             margin-bottom: 30px;
         }
+.botonCiudad1{
+    background-color: rgb(206, 113, 230);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px  30px;
+    margin: 30px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+
+}
+.botonCiudad2{
+    background-color: rgb(206, 113, 230);
+    color: #fff;
+    text-decoration: none;
+    padding: 15px  30px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 60px;
+    margin-right: 20px;
+    padding-bottom: 10px;
+ 
+}
+            
+
     </style>
 </head>
 
@@ -29,8 +70,8 @@
     <h1 class="ciud"> Ciudades</h1>
   
 
-        <select class="cib"  aria-label="Large select example">
-            <option selected >Ciudades</option>
+        <select class="cib"  aria-label="Large select example"> 
+            <option selected > Selecciona el nombre de la  ciudad  </option>
             <option value="1">Bogotá</option>
             <option value="2">Medellín</option>
             <option value="3">Cartagena</option>
@@ -43,9 +84,21 @@
           </select> 
           <br>
 
-   
+          <div class="botCiudad">
+            <a href="index.html">  
+                <button class="botonCiudad1" type="button">Cancelar </button>
+            </a>
+        
+                <a href="deportes.html">
+                    <button class="botonCiudad2" type="button">Guardar</button>
+                </a>
+          </div>
 
-    <a class="btn" href="index.html">Cancelar</a>
+
+          
+        
+         
+    
 
 </body>
 

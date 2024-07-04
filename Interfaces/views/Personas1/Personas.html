@@ -4,97 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Personas</title>
 
-    <style>
-        .pers {
-            text-align:center;
-            border: solid 5px;
-            color: rgb(0, 153, 255);
-        }
-        .cajTipo {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 30px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .numDo {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 15px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .cajNom {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 30px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .cajApe {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 15px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .cajaDirec {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 30px;
-            width: 600px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .caTe {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 30px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .caFe {
-            margin-right: 60px;
-            margin-bottom: 10px;
-            margin-left: 15px;
-            width: 250px;
-            height: 20px;
-            border-radius: 8px;
-            padding: 4px 4px;
-        }
-        .btn1{
-            border-color: rgb(80, 249, 255);
-            background-color: rgb(169, 240, 250);
-            margin-left: 215px;
-            padding: 10px 15px;
-            font-weight: 700;
-            border-radius: 10px;
-            margin-bottom: 10px;
-          
-        }
-        .btn2{
-            border-color: rgb(80, 249, 255);
-            background-color: rgb(169, 240, 250);
-            margin-left: 80px;
-            padding: 10px 15px;
-            font-weight: 700;
-            border-radius: 10px;
-            margin-bottom: 10px;
-        }
-    </style>
 
 </head>
 
@@ -103,9 +16,9 @@
 
     <!--Codigo de los datos personales-->
 
-    <label for="exampleDataList" class="form-label"></label>
+    <label for="exampleDataList" class="tip"></label>
     <input class="cajTipo" list="datalistOptions" id="exampleDataList" placeholder="Tipo de documento ">
-    <datalist id="datalistOptions">
+    <datalist id="text">
         <option value="CC">
         <option value="CE">
         <option value="NI">
@@ -127,17 +40,16 @@
     <input class="cajApe" list="text" id="text" placeholder="Apellidos"><br>
     <input class="cajaDirec" type="text" placeholder="Dirección" aria-label=".form-control-lg example"> <br>
     <input class="caTe" list="text" id="text" placeholder="Telefono">
-    <input class="caFe" type="date" placeholder="Fecha de nacimiento" aria-label="default input example">
+    <input class="caFe" type="text" placeholder="Fecha de nacimiento" aria-label="default input example">
 
     <!--Codigo de los botones-->
 
     <div class="d-grid gap-2 d-md-block">
         <button class="btn1" type="button">Cancelar</button>
-        <a href="ciudades.html"> 
-        <button class="btn2" type="button">Guardar</button>
-      </div>
+        <a href="ciudades.html">
+            <button class="btn2" type="button">Guardar</button>
+    </div>
     </a>
-
 
 
 

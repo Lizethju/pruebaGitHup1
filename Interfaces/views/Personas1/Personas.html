@@ -12,48 +12,53 @@
 </head>
 
 <body>
-    <h1 class="pers"> Datos personales</h1>
-
-    <!--Codigo de los datos personales-->
-
-    <label for="exampleDataList" class="tip"></label>
-    <input class="cajTipo" list="datalistOptions" id="exampleDataList" placeholder="Tipo de documento ">
-    <datalist id="text">
-        <option value="CC">
-        <option value="CE">
-        <option value="NI">
-        <option value="RC">
-        <option value="PB">
-    </datalist>
-
-    <label for="exampleDataList" class="form-label"></label>
-    <input class="numDo" list="number" id="number" placeholder="Número de documento">
-    <datalist id="datalistOptions">
-        <option value="San Francisco">
-        <option value="New York">
-        <option value="Seattle">
-        <option value="Los Angeles">
-        <option value="Chicago">
-    </datalist><br>
-
-    <input class="cajNom" list="text" id="text" placeholder="Nombres">
-    <input class="cajApe" list="text" id="text" placeholder="Apellidos"><br>
-    <input class="cajaDirec" type="text" placeholder="Dirección" aria-label=".form-control-lg example"> <br>
-    <input class="caTe" list="text" id="text" placeholder="Telefono">
-    <input class="caFe" type="text" placeholder="Fecha de nacimiento" aria-label="default input example">
-
-    <!--Codigo de los botones-->
-
-    <div class="d-grid gap-2 d-md-block">
-        <button class="btn1" type="button">Cancelar</button>
-        <a href="ciudades.html">
-            <button class="btn2" type="button">Guardar</button>
-    </div>
-    </a>
 
 
+   
+    <div class="container">
+        <div class="title"> </div>
+        <form action="#">
+            <span>Documento</span>
+            <select class="form-1" aria-label="Default select example">
+                <option selected>Tipo de documento</option>
+                <option value="1">CC</option>
+                <option value="2">CE</option>
+                <option value="3">NI</option>
+                <option value="2">RC</option>
+                <option value="3">PB</option>
+              </select>
 
+            <div class="form-2">
+                <span>Número de docuemento</span>
+                <input type="number" placeholder="Ingrese documento">
+            </div>
 
+    
+            <div class="form-group">
+                <span>Nombre</span>
+                <input type="text" placeholder="Nombre">
+            </div>
+    
+            <div class="form-group">
+                <span>Apellido</span>
+                <input type="text" placeholder="Apellido">
+            </div>
+    
+            <div class="form-group">
+                <span>Dirección</span>
+                <input type="text" placeholder="Dirección">
+            </div>
+            <div class="form-group">
+                <span>Telefono</span>
+                <input type="number" placeholder="Telefono">
+            </div>
+    
+            <div class="form-group">
+                <span>Fecha</span>
+                <input type="date" placeholder="Fecha">
+            </div>
+        </form>
+        </div>
 </body>
 
 </html>

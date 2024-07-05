@@ -1,0 +1,78 @@
+*{
+    background: linear-gradient(130deg, rgb(167, 221, 238), rgb(216, 223, 220));
+}
+
+.depor {
+    width: 80%;
+    border-left: 30px;
+    justify-content: center;
+    border: solid 5px;
+    color: rgb(129, 152, 226);
+    display: flex;
+    flex-direction: initial;
+}
+
+.cajaDepo {
+    margin-right: 60px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 550px;
+    height: 20px;
+    border-radius: 8px;
+    padding: 4px 4px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: initial;
+}
+
+
+.btnes1 {
+    width: 20%;
+    border-color: rgb(130, 77, 165);
+    background-color: rgb(163, 107, 226);
+    background-color: rgb(177, 231, 231);
+    margin-left: 120px;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+}
+
+.btnes2 {
+    width: 20%;
+    border-color: rgb(130, 77, 165);
+    background-color: rgb(163, 107, 226);
+    margin-left: 120px;
+    padding: 10px 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    margin-top: 1px;
+    display: flex;
+    flex-direction: initial;
+    text-align: center;
+    justify-content: center;
+
+}
+
+@media (max-width:584px) {
+
+    .depor {
+        max-width: 100%;
+
+    }
+
+    .cajaDepo {
+        max-width: 100%;
+    }
+
+    .btnes1 {
+        max-width: 100%;
+    }
+
+    .btnes2 {
+        max-width: 100%;
+    }
+}

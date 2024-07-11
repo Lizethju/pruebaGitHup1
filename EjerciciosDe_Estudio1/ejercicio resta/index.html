@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Probando</title>
+    <script src="resta.js"></script>
+
+</head>
+<body>
+    
+    <p> Probando mi ejercicio</p>
+
+
+    const numero1 = prompt("Ingrese el numero1" );
+
+const numero2 = prompt("Ingrese el numero2");
+
+var resta = numero1-numero2;
+
+if( resta > 0){
+
+    console.log("Mayor a 0")
+
+    let imparpar = resta % 2;
+
+    if (imparpar == 0){
+        console.log("ES numero par");
+    } else{
+        console.log("Es un numero impar");
+    }
+}else{
+    console.log("Es menor o igual a 0");
+}
+</body>
+</html>

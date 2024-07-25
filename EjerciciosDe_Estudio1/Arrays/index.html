@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Preguntas Biblicas</title>
 
 </head>
 
-<body>
-    
+<body onload="comenzarTiempo()">
+    <h1> Preguntas bíblicas</h1>
+    <h1>00:00:00</h1>
+    <h4> Responde las preguntas lo más rápido que puedas. <span id="cuentaRegresiva"></span></h4>
+    <p> <b>1.</b> ¿Cuántos años vivió noe?</p>
+    <input type="text" id="tiempo en años">
 
+    <p><b>2.</b> ¿Cuántos años en total sirvió Jacob a Laban? </p>
+    <input type="text" id="total servido">
 
-    
+    <p><b>3.</b> ¿Cuántos años vivió el pueblo de Israel esclavo en babilonia?</p>
+    <input type="text" id="total esclavo">
 
-    
+    <p><b>4.</b>¿Cuál fue el primer rey del pueblo de Israel?</p>
+    <input type="text" id="primer rey">
+
+    <p> <b>5.</b>¿Cuál fue el último profeta del pueblo de Dios?</p>
+    <input type="text" id="ultimo profeta">
+    <br>
+    <br>
+    <button onclick="Finalizado()">Finalizar</button>
+
+    <button onclick="Comenzando()">Reiniciar</button>
+
+    <script>
+        let tiempoFinalizado;
+        let intervaloTiempo;
+        let tiempoCumplido;
+
+        function comenzarTiempo() {
+            tiempoFinalizado = setTimeout(tiempoCumplido, 30000);
+            intervaloTiempo = setInterval(tictac, 10000);
+            document.getElementById("cuentaRegresiva").textContent = 30;
+        }
+        function tictac() {
+            let tiempo = document.getElementById("cuentaRegresiva").textContent =30;
+            document.getElementById("cuentaRegresiva").textContent = tiempo - 1;
+        }
+
+        function tiempoCumplido() {
+            clearInterval(intervaloTiempo);
+            document.getElementById("cuentaRegresiva").textContent = 0;
+            alert("Se acabo el tiempo");
+        }
+
+        function Finalizado() {
+            clearTimeout(tiempoFinalizado);
+            clearInterval(intervaloTiempo);
+
+            let fecha = new Date();
+            let respuesta1 = document.getElementById("tiempo en años").value;
+            let respuesta2 = document.getElementById("total servido").value;
+            let respuesta3 = document.getElementById("total esclavo").value;
+            let respuesta4 = document.getElementById("primer rey").value;
+            let respuesta5 = document.getElementById("ultimo profeta").value;
+
+            let mensaje = fecha.toLocaleString("es-Es") + " " +
+                "1." + "tiempo en años" + " " +
+                "2." + "total servido" + "  " +
+                "3." + "total esclavo" + "  " +
+                "4." + "primer rey" + "  " +
+                "5." + "ultimo profeta";
+                alert(mensaje);
+ }
+
+ function Comenzando (){
+    location.reload();
+ }
+
+    </script>
+
 </body>
+
 </html>
-
-
-

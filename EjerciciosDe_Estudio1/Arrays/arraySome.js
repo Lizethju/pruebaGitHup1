@@ -18,12 +18,16 @@ console.log (primerCaso);
         console.error(connejo + 'no existe'))}
     */ 
 
-        const numero1 = 15
+      /*  const numero1 = 15
 
         const numero2 = 26
         
         resultado1 = (numero1-numero2);
-
+*/
         
+/*let numeros =[2,5,6,3,8,9,25];
+
+console.log (numeros.at(5));
+*/
 
 

@@ -10,3 +10,4 @@ productos.array.forEach(element => {
 });
 
 console.log(hola)
+

@@ -2,74 +2,56 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ejercicio 1</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-        <script src="ejercicio1.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ejercicio 1</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="ejercicio1.js"></script>
 
 </head>
 
 <body>
 
-    <div class="container">
+  <div class="container">
 
-        <h1>&#128250;Calcular Descuento de Compra</h1>
-        <br>
+    <h1>&#128250;Calcular Descuento de Compra</h1>
+    <br>
+    <select class="form-select" aria-label="Default select example" id="selecProductos" onchange="seleccionarProducto(this)">
+      <option selected value="1">Selecciona el producto</option>
+     
+    </select>
+    <br>
 
-        <select class="form-select" aria-label="Default select example" id="selecProducto">
-            <option selected value="1">Selecciona el producto</option>
-            <option value="">Televisor</option>
-            <option value="">Nevera</option>
-            <option value="">Lavadora</option>
-        </select>
-        <br>
-        <input class="form-control" type="text" value="Precios" aria-label="readonly input example" readonly>
-        <br>
-        <button class="btn btn-outline-primary" onclick="registroProducto()">Registrar</button>
-        <br>
-
-        <table class="table table-striped table-hover">
-            <thead>
-              <tr>
-                <th scope="col">Producto</th>
-                <th scope="col">Precio</th>
-                <th scope="col">Descuento %</th>
-                <th scope="col">Total a Pagar</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">Televisor</th>
-                <td>570000</td>
-                <td>10</td>
-                <td>513000</td>
-              </tr>
-              <tr>
-                <th scope="row">Nevera</th>
-                <td>1000000</td>
-                <td>20</td>
-                <td$800000</td>
-              </tr>
-              <tr>
-                <th scope="row">Lavadora</th>
-                <td>680000</td>
-                <td>50</td>
-                <td>340000</td>
-              </tr>
-            </tbody>
-          </table>
-          <br>
-        <button class="btn btn-outline-primary" onclick="pagarProducto()"> Pagar</button>
-
-
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="for-label">Descuento</label>
+      <input type="number" value="1" class="form-control" id="Descuento" placeholder=" Descuento ">
     </div>
 
-    
+    <br>
+    <button class="btn btn-outline-primary" onclick="agregarProducto()">Registrar</button>
+    <br>
+    <table class="table table-striped table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Producto</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Descuento %</th>
+          <th scope="col">Total a Pagar</th>
+        </tr>
+      </thead>
+      <tbody id="tablaProductosTec">
+
+
+      </tbody>
+    </table>
+  
+
+  </div>
 </body>
 
 </html>
+
